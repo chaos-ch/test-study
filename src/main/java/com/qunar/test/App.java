@@ -12,6 +12,14 @@ import java.util.concurrent.atomic.AtomicInteger;
  */
 public class App {
     public static void main(String[] args) {
+        DataSource dataSource1 = new DataSource();
+        DataSource dataSource2 = new DataSource();
+        Class c1 = dataSource1.getClass();
+        Class c2 = dataSource2.getClass();
+        System.out.println(c1);
+        System.out.println(c2);
+
+
         List<String> stringList = Lists.newArrayList("hello", "world");
         boolean isContained = stringList.contains(null);
         System.out.println(isContained);

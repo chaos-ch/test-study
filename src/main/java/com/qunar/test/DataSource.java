@@ -10,6 +10,9 @@ public class DataSource {
 
     }
 
+    public DataSource() {
+    }
+
     public String desc;
 
     public String getDesc() {
