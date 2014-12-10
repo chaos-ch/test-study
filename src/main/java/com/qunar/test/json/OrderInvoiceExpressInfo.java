@@ -38,8 +38,6 @@ public class OrderInvoiceExpressInfo implements Serializable {
     /** 用户支付的邮递费用 默认为0元 **/
     private Money fee = InvoiceDispatchType.BY_HOTEL.fee();
 
-    /**发票物流详细信息，按时间排序**/
-    private List<LogisticsInfo> logisticsInfos;
 
     public static long getSerialVersionUID() {
         return serialVersionUID;
@@ -101,13 +99,6 @@ public class OrderInvoiceExpressInfo implements Serializable {
         this.fee = fee;
     }
 
-    public List<LogisticsInfo> getLogisticsInfos() {
-        return logisticsInfos;
-    }
-
-    public void setLogisticsInfos(List<LogisticsInfo> logisticsInfos) {
-        this.logisticsInfos = logisticsInfos;
-    }
 
     @Override
     public String toString() {
