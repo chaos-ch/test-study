@@ -1,4 +1,4 @@
-import com.qunar.test.ServiceFactory;
+import com.ch.test.ServiceFactory;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.test.context.ContextConfiguration;
